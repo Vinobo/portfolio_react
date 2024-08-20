@@ -1,0 +1,30 @@
+.header {
+  background-color: whitesmoke;
+}
+
+.nav {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fontLogo {
+  font-family: cursive;
+  font-size: x-large;
+}
+
+.list {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-blue-200);
+}
+
+.list a:hover,
+.list a.active {
+  color: #31302e;
+}

@@ -1,3 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-blue-100: #A7E6FF;
+  --color-blue-200: #3ABEF9;
+  --color-blue-300: #86A7FC;
+  --color-blue-400: #3468C0;
+  --color-blue-500: #3572EF;
+  --color-blue-600: #050C9C;
+
+
+  --color-yellow: #FFDD95;
+
+  --color-orange: #FF9843;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

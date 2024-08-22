@@ -1,5 +1,7 @@
 
 export default function About() {
 
-  return <section id="about" className="h-screen">about</section>
+  return <section id="about" className="min-h-screen">
+    <article>about</article>
+  </section>
 }

@@ -1,8 +1,55 @@
-main {
-  max-width: 80rem;
-  margin: auto;
+section:nth-child(odd) {
+  background-color: var(--color-yellow);
+  color: var(--color-blue-500);
 }
 
-section {
+section:nth-child(even) {
+  background-color: var(--color-blue-500);
+}
+
+article {
+  max-width: 80rem;
+  margin: auto;
   padding: 4rem 2rem;
 }
+
+main {
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+}
+
+main::-webkit-scrollbar {
+  background: transparent;
+  /* Chrome/Safari/Webkit */
+  width: 0px;
+}
+
+main section {
+  scroll-snap-align: start;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  article {
+    max-width: 40rem;
+    margin: auto;
+    padding: 4rem 2rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

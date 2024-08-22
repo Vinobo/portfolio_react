@@ -1,0 +1,9 @@
+.footer {
+  background-color: var(--color-orange);
+
+}
+
+.footer section {
+  background-color: transparent !important;
+  color: var(--color-blue-600) !important;
+}

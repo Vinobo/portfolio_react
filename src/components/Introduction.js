@@ -1,5 +1,9 @@
 
 export default function Introduction() {
 
-  return <section className="h-screen">Introduction</section>
+  return (
+    <section className="min-h-screen">
+      <article>Introduction</article>
+    </section>
+  )
 }

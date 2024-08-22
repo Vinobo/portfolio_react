@@ -1,11 +1,23 @@
 .header {
-  background-color: whitesmoke;
+  background-color: var(--color-blue-500);
+}
+
+.bgYellow {
+  background-color: var(--color-yellow);
+  color: var(--color-blue-500);
 }
 
 .nav {
+  /* max-width: 80rem;
+  margin: auto; */
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
+}
+
+.showBar {
+  display: none;
+  font-size: x-large;
 }
 
 .fontLogo {
@@ -21,10 +33,67 @@
 
 a {
   text-decoration: none;
-  color: var(--color-blue-200);
 }
 
 .list a:hover,
 .list a.active {
-  color: #31302e;
+  opacity: 0.7;
 }
+
+.closeBar {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    display: none;
+    position: absolute;
+    background-color: var(--color-blue-200);
+    color: yellow;
+    min-width: 50%;
+    min-height: 50vh;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+    top: 0;
+    padding: 2rem 0;
+  }
+
+  .bgNavYellow {
+    background-color: yellow;
+    color: var(--color-blue-400);
+  }
+
+  .showBar {
+    display: block;
+  }
+
+  .list {
+    flex-direction: column;
+  }
+
+  .closeBar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    padding: 0.5rem 1rem;
+    font-size: larger;
+  }
+
+  .show {
+    display: block;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
